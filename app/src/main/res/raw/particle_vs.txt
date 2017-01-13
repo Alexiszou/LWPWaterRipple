@@ -1,0 +1,12 @@
+
+uniform vec4 uPosition;
+uniform mat4 uProjectionM;
+attribute vec2 aPosition;
+varying vec2 vPosition;
+
+void main() {
+	gl_Position = vec4(uPosition.xyz, 1.0);
+	gl_Position.xy += aPosition * uPosition.w;
+	gl_Position = uProjectionM * gl_Position;
+	vPosition = aPosition;
+}

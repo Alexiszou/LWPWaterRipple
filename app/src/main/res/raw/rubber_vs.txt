@@ -1,0 +1,33 @@
+
+uniform mat4 uViewM;
+uniform mat4 uProjectionM;
+uniform vec3 uCtrl[9];
+
+attribute vec2 aPosition;
+
+varying vec3 vNormal;
+varying vec3 vPosition;
+
+void main() {
+	vec3 c00 = mix(uCtrl[0], uCtrl[1], aPosition.x);
+	vec3 c01 = mix(uCtrl[1], uCtrl[2], aPosition.x);
+	vec3 c0 = mix(c00, c01, aPosition.x);
+	
+	vec3 c10 = mix(uCtrl[3], uCtrl[4], aPosition.x);
+	vec3 c11 = mix(uCtrl[4], uCtrl[5], aPosition.x);
+	vec3 c1 = mix(c10, c11, aPosition.x);
+	
+	vec3 c20 = mix(uCtrl[6], uCtrl[7], aPosition.x);
+	vec3 c21 = mix(uCtrl[7], uCtrl[8], aPosition.x);
+	vec3 c2 = mix(c20, c21, aPosition.x);
+	
+	vec3 pos0 = mix(c0, c1, aPosition.y);
+	vec3 pos1 = mix(c1, c2, aPosition.y);
+	vec3 pos = mix(pos0, pos1, aPosition.y);
+	
+	gl_Position = uProjectionM * uViewM * vec4(pos, 1.0);
+	
+	vNormal = (c00 - c01) + (c10 - c11) + (c20 - c21);
+	vNormal = mat3(uViewM) * cross(vNormal, pos1 - pos0);
+	vPosition = gl_Position.xyz;
+}

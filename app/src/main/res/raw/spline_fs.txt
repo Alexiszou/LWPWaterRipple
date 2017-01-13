@@ -1,0 +1,11 @@
+
+precision mediump float;
+
+varying vec2 vPosition;
+
+void main() {
+	gl_FragColor.rgb = vec3(0.8, 0.6, 0.0);
+	gl_FragColor.a = 1.0 - smoothstep(0.0, 1.0, abs(vPosition.y));
+	gl_FragColor.a -= 1.0 - smoothstep(0.0, 0.02, vPosition.x);
+	gl_FragColor.a -= 1.0 - smoothstep(0.0, 0.02, (1.0 - vPosition.x));
+}

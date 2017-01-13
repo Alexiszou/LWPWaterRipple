@@ -1,0 +1,16 @@
+
+uniform mat4 uProjectionM;
+uniform vec2 uEmitterCtrl0;
+uniform vec2 uEmitterCtrl1;
+uniform vec2 uEmitterCtrl2;
+attribute float aPosition;
+
+void main() {
+	float t = smoothstep(0.0, 1.0, aPosition);
+	gl_Position.xy = (1.0 - t) * (1.0 - t) * uEmitterCtrl0 +
+	                 2.0 * (1.0 - t) * t * uEmitterCtrl1 +
+	                 t * t * uEmitterCtrl2;
+	gl_Position.z = 0.0;
+	gl_Position.w = 1.0;
+	gl_Position = uProjectionM * gl_Position;
+}

@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">LWPWaterRipple</string>
+    <string name="service_name">WaterRipple</string>
+    <string name="author">Alexis</string>
+    <string name="description">live wallpaper water ripple effect</string>
+
+
+    <string name="error_shader_compiler">OpenGL error; GLSL shader compiler not supported.</string>
+    <string name="tab_fluffy">FLUFFY</string>
+    <string name="tab_pentagons">PENTAGONS</string>
+    <string name="tab_circles">CIRCLES</string>
+    <string name="tab_rubber">RUBBER</string>
+    <string name="tab_splines">SPLINES</string>
+    <string name="tab_fractal">FRACTAL</string>
+    <string name="tab_stars">STARS</string>
+    <string name="tab_blob">BLOB</string>
+    <string name="tab_particles">PARTICLES</string>
+    <string name="tab_textures">TEXTURES</string>
 </resources>

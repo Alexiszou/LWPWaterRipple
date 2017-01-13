@@ -1,0 +1,14 @@
+
+precision mediump float;
+
+uniform sampler2D sBackground;
+uniform sampler2D sForeground;
+
+varying vec2 vTexPosBackground;
+varying vec2 vTexPosForeground;
+
+void main() {
+	vec4 colorBg = texture2D(sBackground, vTexPosBackground);
+	vec4 colorFg = texture2D(sForeground, vTexPosForeground);
+	gl_FragColor = colorBg + colorBg.a * colorFg;
+}

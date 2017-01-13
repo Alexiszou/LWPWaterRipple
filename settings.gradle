@@ -1,1 +1,3 @@
-include ':app'
+include ':app', ':app1', ':myapplication', ':waterripple'
+include ':liveWallpaper'
+include ':waterScreens'

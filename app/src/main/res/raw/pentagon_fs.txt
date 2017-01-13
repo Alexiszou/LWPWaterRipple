@@ -1,0 +1,41 @@
+
+precision mediump float;
+uniform vec3 uColor;
+varying vec2 vPosition;
+
+void main() {
+	const float cos = cos(3.14159265359 * 0.4);
+	const float sin = sin(3.14159265359 * 0.4);
+
+	int count = 0;
+	float fadingEdge = 0.0;
+	float fadingCorner = 0.0;
+	vec2 pos = vPosition;
+	
+	if (pos.y < 0.7) {
+		++count;
+	} else {
+		fadingEdge += 1.0 - smoothstep(0.7, 0.8, pos.y);
+		fadingCorner += 1.0 - smoothstep(0.0, 0.1, distance(vec2(sin * 0.53, 0.7), pos));		
+	}
+	
+	for (int i = 0; i < 4; ++i) {
+		pos = vec2(cos * pos.x - sin * pos.y, sin * pos.x + cos * pos.y);	
+		if (pos.y < 0.7) {
+			++count;
+		} else {
+			fadingEdge += 1.0 - smoothstep(0.7, 0.8, pos.y);
+			fadingCorner += 1.0 - smoothstep(0.0, 0.1, distance(vec2(sin * 0.53, 0.7), pos));
+		}
+	}
+
+	gl_FragColor = vec4(uColor, 0.3);
+	
+	if (count == 4) {
+		gl_FragColor.a *= fadingEdge;
+	}
+	if (count == 3) {
+		gl_FragColor.a *= fadingCorner;
+	}
+	
+}

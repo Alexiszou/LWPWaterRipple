@@ -1,0 +1,16 @@
+
+precision mediump float;
+
+uniform vec4 uColorInner;
+uniform vec4 uColorCenter;
+uniform vec4 uColorOuter;
+
+varying vec2 vPosition;
+
+void main() {
+	float d = length(vPosition * vec2(0.3, 0.6)  + vec2(0.0, 0.5));
+	if (d < 0.5)
+		gl_FragColor = mix(uColorInner, uColorCenter, d * 2.0);
+	else
+		gl_FragColor = mix(uColorCenter, uColorOuter, (d - 0.5) * 2.0);
+}

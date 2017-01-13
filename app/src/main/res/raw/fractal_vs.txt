@@ -1,0 +1,12 @@
+
+uniform mat3 uViewMatrix;
+uniform mat3 uMoveMatrix;
+attribute vec2 aPosition;
+varying vec2 vPosition;
+
+void main() {
+	vec3 pos = uViewMatrix * uMoveMatrix * vec3(aPosition, 1.0);
+	
+	vPosition = (pos.xy / pos.z) * 1.0;
+	gl_Position = vec4(aPosition, 0.0, 1.0);
+}

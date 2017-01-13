@@ -1,0 +1,21 @@
+
+uniform mat4 uRotationM;
+uniform mat4 uViewM;
+uniform mat4 uProjectionM;
+uniform vec3 uPosition;
+uniform vec3 uDirection;
+uniform vec3 uGravity;
+attribute float aPosition;
+varying vec3 vColor;
+
+void main() {
+	vec3 pos = uPosition;
+	vec3 direction = normalize(uDirection);
+	vec3 gravity = uGravity + vec3(0.0, -9.81, 0.0) * 0.015;
+	for (float i = 1.0; i <= aPosition; ++i) {
+		direction = mat3(uRotationM) * direction;
+		pos += 0.1 / length(direction + i * gravity) * (direction + i * gravity);
+	}
+	gl_Position = uProjectionM * uViewM * vec4(pos, 1.0);
+	vColor = vec3(abs(pos.z)); //abs(direction);
+}

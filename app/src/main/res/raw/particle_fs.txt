@@ -1,0 +1,9 @@
+
+precision mediump float;
+uniform vec3 uColor;
+varying vec2 vPosition;
+
+void main() {
+	float d = 1.0 - smoothstep(0.5, 1.0, length(vPosition));
+	gl_FragColor = vec4(uColor, 0.2 * d);
+}
