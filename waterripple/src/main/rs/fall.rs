@@ -387,10 +387,10 @@ int root(void) {
         }
     }
 
-    if (add) {
-        int i = (int)rsRand(LEAVES_COUNT);
-        genLeafDrop(gLeaves[i], rsRand(0.3f) + 1.5f);
-    }
+    //if (add) {
+        //int i = (int)rsRand(LEAVES_COUNT);
+        //genLeafDrop(gLeaves[i], rsRand(0.3f) + 1.5f);
+    //}
 
     rsgBindProgramVertex(g_PVWater);
     generateRipples();
