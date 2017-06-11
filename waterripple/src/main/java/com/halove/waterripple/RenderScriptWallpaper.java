@@ -37,6 +37,7 @@ public abstract class RenderScriptWallpaper<T extends RenderScriptScene> extends
         return new RenderScriptEngine();
     }
 
+
     protected abstract T createScene(int width, int height);
     protected abstract Context getContext();
 
@@ -54,8 +55,10 @@ public abstract class RenderScriptWallpaper<T extends RenderScriptScene> extends
         @Override
         public void onDestroy() {
             super.onDestroy();
+            Log.d(TAG,"RenderScriptWallpaper onDestroy!!!!");
             destroyRenderer();
         }
+
 
         private void destroyRenderer() {
             if (mRenderer != null) {
@@ -72,7 +75,7 @@ public abstract class RenderScriptWallpaper<T extends RenderScriptScene> extends
         @Override
         public void onVisibilityChanged(boolean visible) {
             super.onVisibilityChanged(visible);
-            //Log.d(TAG,"RenderScriptWallpaper onVisibilityChanged!!!!");
+            Log.d(TAG,"RenderScriptWallpaper onVisibilityChanged!!!!"+visible);
             if (mRenderer != null) {
                 if (visible) {
                     mRenderer.start();
@@ -116,6 +119,7 @@ public abstract class RenderScriptWallpaper<T extends RenderScriptScene> extends
         public void onSurfaceDestroyed(SurfaceHolder holder) {
             super.onSurfaceDestroyed(holder);
             destroyRenderer();
+            Log.d(TAG,"RenderScriptWallpaper onSurfaceDestroyed!!!!");
         }
 
         @Override
@@ -127,6 +131,7 @@ public abstract class RenderScriptWallpaper<T extends RenderScriptScene> extends
                 return null;
             }
         }
+
 
         @Override
         public void onTouchEvent(MotionEvent event) {

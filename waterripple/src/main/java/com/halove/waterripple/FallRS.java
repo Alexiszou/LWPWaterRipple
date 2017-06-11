@@ -17,8 +17,6 @@
 package com.halove.waterripple;
 
 import android.app.WallpaperManager;
-import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -32,15 +30,11 @@ import android.renderscript.ProgramStore.BlendDstFunc;
 import android.renderscript.ProgramStore.BlendSrcFunc;
 import android.renderscript.ProgramVertex;
 import android.renderscript.ProgramVertexFixedFunction;
-import android.renderscript.RenderScriptGL;
 import android.renderscript.Sampler;
 import android.renderscript.ScriptC;
 
-import java.security.spec.DSAParameterSpec;
-import java.security.spec.ECField;
 import java.util.Random;
 import java.util.TimeZone;
-import java.util.concurrent.ExecutionException;
 
 import static android.renderscript.ProgramStore.DepthFunc.ALWAYS;
 import static android.renderscript.Sampler.Value.CLAMP;
@@ -310,6 +304,8 @@ class FallRS extends RenderScriptScene {
         }
 
         Bitmap b = Utilities.drawable2Bitmap(mWallpaperManager.getDrawable());
+
+
         final Allocation allocation = Allocation.createFromBitmap(mRS, b);
         return allocation;
     }
