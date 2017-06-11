@@ -11,6 +11,13 @@ import android.media.ThumbnailUtils;
 import android.provider.MediaStore;
 import android.util.Log;
 
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+
 /**
  * Created by alexis on 10/01/17.
  */
@@ -24,6 +31,7 @@ public class Utilities {
     public static Bitmap drawable2Bitmap(Drawable drawable){
         Bitmap bitmap = null;
         bitmap = ((BitmapDrawable)drawable).getBitmap();
+
         bitmap = Bitmap.createBitmap(bitmap,0,0,DEVICE_WIDTH,DEVICE_HEIGHT);
         //bitmap = scaleImage(((BitmapDrawable)drawable).getBitmap(),DEVICE_WIDTH,DEVICE_HEIGHT);
         if(bitmap == null){
@@ -66,4 +74,5 @@ public class Utilities {
         }*/
         return newbm;
     }
+
 }

@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/samsungpond.jpg",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/src/main/res/drawable-xxhdpi/samsungpond.jpg"
+    },
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/wallpaper1.jpg",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/src/main/res/drawable-xxhdpi/wallpaper1.jpg"
+    },
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/wallpaper.jpg",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/src/main/res/drawable-xxhdpi/wallpaper.jpg"
+    }
+]

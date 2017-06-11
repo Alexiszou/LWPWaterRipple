@@ -15,7 +15,9 @@ public final class R {
         public static final int leaves=0x7f020001;
         public static final int pond=0x7f020002;
         public static final int samsungpond=0x7f020003;
-        public static final int wallpaper2=0x7f020004;
+        public static final int wallpaper=0x7f020004;
+        public static final int wallpaper1=0x7f020005;
+        public static final int wallpaper2=0x7f020006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
