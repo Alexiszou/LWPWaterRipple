@@ -8,6 +8,12 @@ android {
             storeFile file('/home/alexis/Desktop/halove_platform.keystore')
             storePassword 'halove@hz'
         }
+        zhz {
+            keyAlias 'halove'
+            keyPassword 'ZhZ19870802'
+            storeFile file('/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterripple/halove_zhz.keystore')
+            storePassword 'ZhZ19870802'
+        }
     }
     compileSdkVersion 15
     buildToolsVersion '23.0.1'
@@ -15,8 +21,8 @@ android {
         applicationId "com.halove.waterripple"
         minSdkVersion 11
         targetSdkVersion 15
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.halove
     }
@@ -25,6 +31,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.halove
+        }
+        debug {
+            signingConfig signingConfigs.zhz
         }
     }
     productFlavors {

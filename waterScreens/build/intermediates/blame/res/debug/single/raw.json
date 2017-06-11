@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/raw/drop.ogg",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/src/main/res/raw/drop.ogg"
+    },
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/raw/fall.bc",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/generated/res/rs/debug/raw/fall.bc"
+    },
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/raw/water.ogg",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/src/main/res/raw/water.ogg"
+    }
+]

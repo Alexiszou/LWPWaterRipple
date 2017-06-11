@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/drawable-mdpi/leaves.png",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/src/main/res/drawable-mdpi/leaves.png"
+    }
+]

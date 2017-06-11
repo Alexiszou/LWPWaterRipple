@@ -1,0 +1,58 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:3:2-33
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:4:2-38
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:5:2-25
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:7:2-40
+	android:targetSdkVersion
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:7:12-37
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+		INJECTED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml
+uses-feature#android.software.live_wallpaper
+ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:8:2-65
+	android:name
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:8:16-62
+application
+ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:10:2-29:16
+	android:label
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:11:3-35
+	android:icon
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:10:15-44
+service#ca.jvsh.livewallpaper.LiveWallpaper
+ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:14:3-25:13
+	android:label
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:15:4-36
+	android:permission
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:17:4-58
+	android:icon
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:16:4-33
+	android:name
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:14:12-41
+intent-filter#android.service.wallpaper.WallpaperService
+ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:19:4-21:20
+action#android.service.wallpaper.WallpaperService
+ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:20:5-73
+	android:name
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:20:13-70
+meta-data#android.service.wallpaper
+ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:22:4-23:45
+	android:resource
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:23:5-42
+	android:name
+		ADDED from /home/alexis/AndroidStudioProjects/LWPWaterRipple/liveWallpaper/src/main/AndroidManifest.xml:22:15-55

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/drawable-mdpi-v4/samsungpond.jpg",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/src/main/res/drawable-mdpi/samsungpond.jpg"
+    },
+    {
+        "merged": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/merged/debug/drawable-mdpi-v4/pond.jpg",
+        "source": "/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/src/main/res/drawable-mdpi/pond.jpg"
+    }
+]
