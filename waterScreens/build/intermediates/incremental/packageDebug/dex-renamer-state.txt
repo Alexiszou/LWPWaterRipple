@@ -1,4 +1,4 @@
-#Sun Jun 11 17:05:42 CST 2017
+#Tue Jun 20 14:10:14 CST 2017
 base.0=/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

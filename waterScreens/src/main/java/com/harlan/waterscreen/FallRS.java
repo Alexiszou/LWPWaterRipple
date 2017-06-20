@@ -415,12 +415,12 @@ class FallRS{
                 "  gl_Position = vec4(pos.x, pos.y, 0.0, 1.0);\n" +
                 "  float dxMul = 1.0;\n" +
 
-//              "  varTex0 = vec2((pos.x + 1.0), (pos.y + 1.6666));\n" +
-				"  varTex0 = vec2((pos.x +1.2), (-pos.y+1.15));\n" +
+              "  varTex0 = vec2((pos.x + 1.0), (-pos.y + 1.0));\n" +
+				//"  varTex0 = vec2((pos.x +1.0), (-pos.y+1.3));\n" +
 
                 "  if (UNI_Rotate < 0.9) {\n" +
 //                "    varTex0.xy *= vec2(0.25, 0.33);\n" +
-				"    varTex0.xy *= vec2(0.4, 0.45);\n" +
+				"    varTex0.xy *= vec2(0.5, 0.5);\n" +
                 "    varTex0.x += UNI_Offset.x * 0.5;\n" +
                 "    pos.x += UNI_Offset.x * 2.0;\n" +
                 "  } else {\n" +

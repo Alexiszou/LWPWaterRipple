@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jun 11 17:05:42 CST 2017
+#Tue Jun 20 14:10:14 CST 2017
 8.set=ANDROID_RESOURCE
 1.base=/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/resources-debug.ap_
 1.file=/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterScreens/build/intermediates/res/resources-debug.ap_/res/raw/fall.bc

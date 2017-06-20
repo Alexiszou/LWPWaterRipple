@@ -12,7 +12,7 @@ android {
         zhz {
             keyAlias 'halove'
             keyPassword 'ZhZ19870802'
-            storeFile file('/home/alexis/AndroidStudioProjects/LWPWaterRipple/waterripple/halove_zhz.keystore')
+            storeFile file('../waterripple/halove_zhz.keystore')
             storePassword 'ZhZ19870802'
         }
     }
